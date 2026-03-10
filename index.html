@@ -1,53 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Rohit Mangla Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rohit Mangla | Portfolio</title>
 
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#f4f4f4;
+font-family: Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+color:#333;
 }
 
 header{
-background:#333;
+background:#0d6efd;
 color:white;
-padding:20px;
+padding:40px;
 text-align:center;
 }
 
+header h1{
+margin:0;
+font-size:40px;
+}
+
 nav{
-background:#555;
-padding:10px;
+background:#333;
 text-align:center;
+padding:10px;
 }
 
 nav a{
 color:white;
 margin:15px;
 text-decoration:none;
-font-weight:bold;
+font-size:18px;
+}
+
+nav a:hover{
+color:#0d6efd;
 }
 
 section{
-padding:30px;
+max-width:900px;
+margin:auto;
+padding:40px 20px;
 }
 
-.project{
+h2{
+border-bottom:2px solid #0d6efd;
+display:inline-block;
+padding-bottom:5px;
+}
+
+.skills ul{
+list-style:none;
+padding:0;
+}
+
+.skills li{
+background:#0d6efd;
+color:white;
+display:inline-block;
+margin:5px;
+padding:8px 15px;
+border-radius:20px;
+}
+
+.project-card{
 background:white;
-padding:15px;
-margin:10px 0;
-border-radius:5px;
-box-shadow:0 0 5px gray;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0px 3px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+margin-top:0;
+}
+
+.contact p{
+font-size:18px;
 }
 
 footer{
-background:#333;
+background:#222;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -57,7 +101,7 @@ padding:15px;
 
 <header>
 <h1>Rohit Mangla</h1>
-<p>B.Tech Student | Python | Data Science Enthusiast</p>
+<p>B.Tech Student | Python Developer | Data Science Learner</p>
 </header>
 
 <nav>
@@ -70,21 +114,23 @@ padding:15px;
 <section id="about">
 <h2>About Me</h2>
 <p>
-I am a B.Tech student interested in Python, Data Science and Machine Learning.
-I enjoy analyzing data and solving real world problems using programming.
+Hello! I am Rohit Mangla, a B.Tech student passionate about Python,
+Data Science and Machine Learning. I enjoy solving real-world problems
+using data analysis and programming.
 </p>
 </section>
 
-<section id="skills">
+<section id="skills" class="skills">
 <h2>Skills</h2>
 
 <ul>
 <li>Python</li>
 <li>Pandas</li>
 <li>NumPy</li>
-<li>Data Visualization</li>
-<li>Machine Learning Basics</li>
+<li>Data Analysis</li>
+<li>Machine Learning</li>
 <li>Web Scraping</li>
+<li>Excel</li>
 </ul>
 
 </section>
@@ -92,40 +138,37 @@ I enjoy analyzing data and solving real world problems using programming.
 <section id="projects">
 <h2>Projects</h2>
 
-<div class="project">
+<div class="project-card">
 <h3>Student Result Analysis</h3>
-<p>Analyzed student performance using Python and Pandas.</p>
+<p>Analyzed student performance data using Python and Pandas to identify trends and insights.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>Sales Data Analysis</h3>
-<p>Analyzed sales dataset and created visualizations.</p>
+<p>Used Python and data visualization to analyze sales trends and business insights.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>Web Scraping Project</h3>
-<p>Collected website data using Python and BeautifulSoup.</p>
+<p>Built a web scraper using Python and BeautifulSoup to collect data from websites.</p>
 </div>
 
 </section>
 
-<section id="contact">
-
+<section id="contact" class="contact">
 <h2>Contact</h2>
 
-<p>Email: yourmail@gmail.com</p>
+<p>Email: rohitmangla018@gmail.com</p>
 
-<p>GitHub: https://github.com/yourusername</p>
+<p>GitHub: https://github.com/Rohit-Mangla</p>
 
-<p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+<p>LinkedIn: https://linkedin.com/in/rohit--mangla</p>
 
 </section>
 
 <footer>
-
-<p>© 2026 Rohit Mangla Portfolio</p>
-
+<p>© 2026 Rohit Mangla | Portfolio</p>
 </footer>
 
 </body>
-</html>
+  </html>

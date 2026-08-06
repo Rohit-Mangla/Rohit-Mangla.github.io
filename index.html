@@ -3,172 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Rohit Mangla | Portfolio</title>
-
-<style>
-
-body{
-margin:0;
-font-family: Arial, Helvetica, sans-serif;
-background:#f4f6f9;
-color:#333;
-}
-
-header{
-background:#0d6efd;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-header h1{
-margin:0;
-font-size:40px;
-}
-
-nav{
-background:#333;
-text-align:center;
-padding:10px;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-size:18px;
-}
-
-nav a:hover{
-color:#0d6efd;
-}
-
-section{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
-}
-
-h2{
-border-bottom:2px solid #0d6efd;
-display:inline-block;
-padding-bottom:5px;
-}
-
-.skills ul{
-list-style:none;
-padding:0;
-}
-
-.skills li{
-background:#0d6efd;
-color:white;
-display:inline-block;
-margin:5px;
-padding:8px 15px;
-border-radius:20px;
-}
-
-.project-card{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0px 3px 8px rgba(0,0,0,0.1);
-}
-
-.project-card h3{
-margin-top:0;
-}
-
-.contact p{
-font-size:18px;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-</style>
+<title>Rohit Kumar — Data Analyst</title>
+<meta name="description" content="Rohit Kumar — Data Analyst & aspiring Data Engineer. SQL, Python, Excel, Power BI, Machine Learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Rohit Mangla</h1>
-<p>B.Tech Student | Python Developer | Data Science Learner</p>
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">rohit<span class="dot">.</span>kumar</a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#schema">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+  </div>
 </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">// data_analyst.jind_haryana</p>
+    <h1 class="hero-title">I turn messy<br>tables into <span class="accent">decisions.</span></h1>
+    <p class="hero-sub">
+      Final-year CS student and Data Analyst who's happiest three joins deep into
+      a query, or explaining a KPI card to someone who just wants the number.
+      Currently building toward Data Engineering — Spark, Airflow, dbt on the roadmap.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="assets/resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+    </div>
+  </div>
 
-<section id="about">
-<h2>About Me</h2>
-<p>
-Hello! I am Rohit Mangla, a B.Tech student passionate about Python,
-Data Science and Machine Learning. I enjoy solving real-world problems
-using data analysis and programming.
-</p>
+  <div class="hero-console" aria-hidden="true">
+    <div class="console-bar"><span></span><span></span><span></span></div>
+    <pre class="console-body"><code><span class="c-kw">SELECT</span> skill, years, status
+<span class="c-kw">FROM</span> rohit.profile
+<span class="c-kw">WHERE</span> status = <span class="c-str">'job_hunting'</span>;
+
+<span class="c-out">-- 4 rows returned</span>
+<span class="c-out">SQL          | 2  | sharp</span>
+<span class="c-out">Python/Pandas| 2  | sharp</span>
+<span class="c-out">Power BI     | 1  | sharp</span>
+<span class="c-out">Data Eng.    | 0  | loading...</span><span class="cursor">▌</span></code></pre>
+  </div>
 </section>
 
-<section id="skills" class="skills">
-<h2>Skills</h2>
-
-<ul>
-<li>Python</li>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>Data Analysis</li>
-<li>Machine Learning</li>
-<li>Web Scraping</li>
-<li>Excel</li>
-</ul>
-
+<!-- ============ ABOUT STRIP ============ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <p class="about-lead">
+      Based in Jind, Haryana — open to Gurgaon, Ahmedabad, or remote. Expected graduation
+      May 2027. I've spent the last several months going deep on SQL, statistics, ML,
+      and Power BI, and building a portfolio around a single messy retail dataset because
+      real analysis is never one clean CSV.
+    </p>
+    <div class="about-stats">
+      <div class="stat"><span class="stat-num">129K+</span><span class="stat-label">rows cleaned & modeled<br>(retail analytics project)</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">internships / programs<br>completed</span></div>
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">end-to-end portfolio<br>projects shipped</span></div>
+    </div>
+  </div>
 </section>
 
-<section id="projects">
-<h2>Projects</h2>
+<!-- ============ WORK / PROJECTS ============ -->
+<section class="work" id="work">
+  <div class="section-head">
+    <span class="cell-tag">A1</span>
+    <h2>Selected work</h2>
+    <p>Five projects, each picked to show a different part of the analyst→engineer path.</p>
+  </div>
 
-<div class="project-card">
-<h3>Student Result Analysis</h3>
-<p>Analyzed student performance data using Python and Pandas to identify trends and insights.</p>
-</div>
+  <div class="project-grid">
 
-<div class="project-card">
-<h3>Sales Data Analysis</h3>
-<p>Used Python and data visualization to analyze sales trends and business insights.</p>
-</div>
+    <article class="project">
+      <div class="project-top">
+        <span class="cell-tag">A2</span>
+        <span class="project-tag">SQL · Python · ML</span>
+      </div>
+      <h3>Retail Sales Analytics</h3>
+      <p>End-to-end pipeline on a 129K-row Kaggle retail dataset (Sales, Stores, Features).
+      Separated cleaning from EDA across two files, handled MarkDown NaNs, imputed CPI/Unemployment
+      per store, flagged negative sales, then layered in regression models — linear, polynomial,
+      SVR, decision tree, working toward Random Forest.</p>
+      <div class="project-links">
+        <a href="#">Repo →</a>
+        <a href="#">Write-up →</a>
+      </div>
+    </article>
 
-<div class="project-card">
-<h3>Web Scraping Project</h3>
-<p>Built a web scraper using Python and BeautifulSoup to collect data from websites.</p>
-</div>
+    <article class="project">
+      <div class="project-top">
+        <span class="cell-tag">A3</span>
+        <span class="project-tag">Python · Pandas · Matplotlib</span>
+      </div>
+      <h3>12-Month Sales Trend Engine</h3>
+      <p>A reusable script that ingests raw monthly sales, computes rolling trends and
+      seasonality, and outputs clean visual summaries — built to answer "is this month
+      actually good, or just seasonal?" without a human re-deriving it each time.</p>
+      <div class="project-links">
+        <a href="#">Repo →</a>
+      </div>
+    </article>
 
+    <article class="project">
+      <div class="project-top">
+        <span class="cell-tag">A4</span>
+        <span class="project-tag">scikit-learn · Classification</span>
+      </div>
+      <h3>At-Risk Student Early Warning Model</h3>
+      <p>Classification model flagging students likely to fall behind, using attendance,
+      grades, and engagement signals. ~82% accuracy, tuned to favor catching true at-risk
+      cases over raw precision — the cost of a false negative here is a student who needed help.</p>
+      <div class="project-links">
+        <a href="#">Repo →</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-top">
+        <span class="cell-tag">A5</span>
+        <span class="project-tag">Excel · Power Query · VBA</span>
+      </div>
+      <h3>Dynamic KPI Tracker</h3>
+      <p>Self-updating Excel workbook (openpyxl-built) with KPI cards that recalc off a live
+      data table — no manual refresh, no broken formulas when a row gets added.</p>
+      <div class="project-links">
+        <a href="#">Repo →</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-top">
+        <span class="cell-tag">A6</span>
+        <span class="project-tag">Excel · HR Analytics</span>
+      </div>
+      <h3>HR Attrition Analysis</h3>
+      <p>A 6-sheet Excel workbook on the IBM HR attrition schema — pivot-driven breakdowns
+      of who leaves, from where, and why, built to show dashboard thinking outside of Power BI.</p>
+      <div class="project-links">
+        <a href="#">Repo →</a>
+      </div>
+    </article>
+
+    <article class="project project-more">
+      <div class="project-top">
+        <span class="cell-tag">A7</span>
+      </div>
+      <h3>More on GitHub</h3>
+      <p>SQL/PostgreSQL reference notes, EDA & stats deep-dives, and an unsupervised
+      learning module all live in the repo history — this page shows the shipped work,
+      GitHub shows the process.</p>
+      <div class="project-links">
+        <a href="#">Visit GitHub →</a>
+      </div>
+    </article>
+
+  </div>
 </section>
 
-<section id="contact" class="contact">
-<h2>Contact</h2>
+<!-- ============ SKILLS AS SCHEMA ============ -->
+<section class="schema" id="schema">
+  <div class="section-head">
+    <span class="cell-tag">B1</span>
+    <h2>Skill schema</h2>
+    <p>If my skills were a table, this is the row.</p>
+  </div>
 
-<p>Email: rohitmangla018@gmail.com</p>
-
-<p>GitHub: https://github.com/Rohit-Mangla</p>
-
-<p>LinkedIn: https://linkedin.com/in/rohit--mangla</p>
-
+  <div class="schema-table">
+    <div class="schema-row schema-row-head">
+      <span>column</span><span>tools</span><span>proficiency</span>
+    </div>
+    <div class="schema-row">
+      <span>querying</span><span>SQL (MySQL, PostgreSQL) · window functions · CTEs</span>
+      <span class="bar"><i style="width:85%"></i></span>
+    </div>
+    <div class="schema-row">
+      <span>analysis</span><span>Python · Pandas · NumPy · statistics & EDA</span>
+      <span class="bar"><i style="width:85%"></i></span>
+    </div>
+    <div class="schema-row">
+      <span>modeling</span><span>scikit-learn · regression · classification · clustering</span>
+      <span class="bar"><i style="width:70%"></i></span>
+    </div>
+    <div class="schema-row">
+      <span>visualization</span><span>Power BI · Excel (Power Query, macros) · Matplotlib/Seaborn</span>
+      <span class="bar"><i style="width:80%"></i></span>
+    </div>
+    <div class="schema-row">
+      <span>data collection</span><span>Requests · BeautifulSoup · Selenium · Scrapy · REST APIs</span>
+      <span class="bar"><i style="width:65%"></i></span>
+    </div>
+    <div class="schema-row">
+      <span>next up</span><span>Spark · Airflow · dbt · Snowflake / BigQuery</span>
+      <span class="bar"><i style="width:25%"></i></span>
+    </div>
+  </div>
 </section>
 
-<footer>
-<p>© 2026 Rohit Mangla | Portfolio</p>
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="experience">
+  <div class="section-head">
+    <span class="cell-tag">C1</span>
+    <h2>Experience</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-row">
+      <div class="tl-marker">C2</div>
+      <div class="tl-content">
+        <h3>Data Analyst Intern — CodeScaler</h3>
+        <span class="tl-meta">Onsite</span>
+        <p>Hands-on internship working with real analysis tasks and reporting workflows.</p>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-marker">C3</div>
+      <div class="tl-content">
+        <h3>Virtual Program — Deloitte (Forage)</h3>
+        <span class="tl-meta">Remote</span>
+        <p>Simulated consulting/data tasks modeled on Deloitte's real client work.</p>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-marker">C4</div>
+      <div class="tl-content">
+        <h3>Virtual Program — Tata Group (Forage)</h3>
+        <span class="tl-meta">Remote</span>
+        <p>Business analytics simulation covering data-driven decision-making.</p>
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-marker">C5</div>
+      <div class="tl-content">
+        <h3>Program — Alfido Tech</h3>
+        <span class="tl-meta">Remote</span>
+        <p>Applied data analytics coursework and project work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="cell-tag">D1</span>
+    <h2>Query me directly.</h2>
+    <p>Open to Data Analyst roles — Gurgaon, Ahmedabad, or remote. Reply time: usually same day.</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com" class="btn btn-primary">your.email@example.com</a>
+      <a href="#" class="btn btn-ghost">LinkedIn →</a>
+      <a href="#" class="btn btn-ghost">GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Built by Rohit Kumar · <span id="year"></span></p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
-  </html>
+</html>
